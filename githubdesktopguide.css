@@ -1,0 +1,141 @@
+/* eksempel1 
+(C) Copyright 2017: Niels Østergaard
+Responsive webdesign */
+
+
+/* først en del der ikke er påvirket af regler */
+
+/* STYLING OG GRID AREA ATRIBUTTER */
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    margin: 0.5em;
+    color: #000;
+}
+
+header {
+    text-align: center;
+    grid-area: a;
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+#versionsstyring{
+    grid-area: b;
+    background-color: deepskyblue;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+#git{
+    grid-area: c;
+    background-color: yellowgreen;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#github {
+    grid-area: d;
+    background-color: orange;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
+
+#githubdesktop {
+    grid-area: e;
+    background-color: #f90;
+    width: 100%;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+.stepimg {
+    max-width: 75%;
+}
+
+#anvendelseafversionsstyring {
+    grid-area: f;
+    background-color: #274e13;
+    color: #fff;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+footer {
+    grid-area: g;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #000;
+    color: #aaa;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+/* STYLING OG GRID AREA ATRIBUTTER */
+
+
+
+/* PADDING AF SECTIONS */
+#githubdesktop{
+    padding-left: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+#versionsstyring {
+    padding-left: 0.5em;
+}
+
+#git {
+    padding-left: 0.5em;
+}
+
+#github {
+    padding-left: 0.5em;
+}
+
+#anvendelseafversionsstyring {
+    padding-left: 0.5em;
+}
+
+/* PADDING AF SECTIONS */
+
+
+
+/* RESPONSIV GRID */
+
+/* MOBIL */
+@media screen and (max-width: 700px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }  
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 700px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+/* RESPONSIV GRID */
+
