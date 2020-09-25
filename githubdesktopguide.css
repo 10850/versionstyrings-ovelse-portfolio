@@ -15,78 +15,51 @@ body {
 
 header {
     text-align: center;
-    grid-area: a;
+    grid-area: header;
     background-color: red;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 10;
 }
 
 #versionsstyring{
-    grid-area: b;
+    grid-area: version;
     background-color: deepskyblue;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 10;
 }
 
 #git{
-    grid-area: c;
+    grid-area: git;
     background-color: yellowgreen;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
 }
 
 #github {
-    grid-area: d;
+    grid-area: hub;
     background-color: orange;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 10;
 }
 
+/* GRID AREA SAMT RESPONSIVE BILLEDER FOR GUIDEN */
 #githubdesktop {
-    grid-area: e;
+    grid-area: guide;
     background-color: #f90;
     width: 100%;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 10;
 }
 
 .stepimg {
     max-width: 75%;
 }
+/* GRID AREA SAMT RESPONSIVE BILLEDER FOR GUIDEN */
 
 #anvendelseafversionsstyring {
-    grid-area: f;
+    grid-area: brug;
     background-color: #274e13;
     color: #fff;
-    grid-row-start: 5;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 10;
 }
 
 footer {
-    grid-area: g;
+    grid-area: footer;
     font-size: 0.8em;
     text-align: center;
     background-color: #000;
     color: #aaa;
-    grid-row-start: 6;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 10;
 }
 /* STYLING OG GRID AREA ATRIBUTTER */
-
 
 
 /* PADDING AF SECTIONS */
@@ -114,17 +87,23 @@ footer {
 /* PADDING AF SECTIONS */
 
 
-
 /* RESPONSIV GRID */
-
 /* MOBIL */
 @media screen and (max-width: 700px) {
     #pagewrap {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }  
-    
+        grid-template-rows: repeat(6, 1f);
+        grid-template-areas: 
+            "header header header header header header"
+            "version version version version version version"
+            "git git git git git git"
+            "hub hub hub hub hub hub"
+            "guide guide guide guide guide guide"
+            "brug brug brug brug brug brug"
+            "footer footer footer footer footer footer";
+    }   
 }
 
 /* DESKTOP */
@@ -133,9 +112,15 @@ footer {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    
+        grid-template-rows: repeat(6, 1f);
+        grid-template-areas:
+            "header header header header header header"
+            "version version version version version version"
+            "git git git hub hub hub"
+            "guide guide guide guide guide guide "
+            "brug brug brug brug brug brug"
+            "footer footer footer footer footer footer";
+    }   
 }
-
 /* RESPONSIV GRID */
 
