@@ -46,11 +46,27 @@ header {
 }
 /* GRID AREA SAMT RESPONSIVE BILLEDER FOR GUIDEN */
 
+/* GRID AREA SAMT RESPONSIVE BILLEDER FOR GUIDES UNDER ANVENDELSE AF VERSIONSSTYRING */
 #anvendelseafversionsstyring {
     grid-area: brug;
     background-color: #274e13;
     color: #fff;
 }
+
+.stepimgbranch {
+    max-width: 100%;
+}
+
+.stepimgcommit {
+    max-width: 100%;
+}
+
+.stepimgpull {
+    max-width: 100%;
+}
+
+
+/* GRID AREA SAMT RESPONSIVE BILLEDER FOR GUIDES UNDER ANVENDELSE AF VERSIONSSTYRING */
 
 footer {
     grid-area: footer;

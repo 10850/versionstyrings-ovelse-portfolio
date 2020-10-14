@@ -88,8 +88,57 @@
             <section id="anvendelseafversionsstyring">
                     <h2>hvordan der kan anvendes versionsstyring</h2>
                     <p>I github er anvendelsen af versionsstyring hele formålet med servicen. Her under gælder der repositories, branches, commits, pull requests og merge.</p>
+                    
+                    <h3>Branches</h3>
+                    <p>Branches bruges når man gerne vil eksperimentere med sit website uden at ændringerne har indflydelse på ens hovedforløb/Master branch. Det er en rigtig god måde at have flere forskellige versioner af det samme website eller fil, som man så kan bruge til ens hovedforløb senere.</p>
+                
+                    <h4>Hvordan man laver en ny branch</h4>
+                    <h4>Step 1</h4>
+                    <p>Man går ind på sin repository og går under branches hvor der vil stå master by defeault, så kan man se sine andre branches man kan vælge at gå ind i.</p>
+                    <p>Der er et tekst felt, som man kan bruge til at søge efter branches. Udover det kan man også lave nye branches ved at skrive det man vil kalde sin nye branch og trykker nede i bunden, hvor der står "Create branch:(navn du gav brancen) from 'master'". Du kan se hvordan knappen ser ud i det lille billede nedenfor det første billede.</p>
+                    <img src="billeder/create-branch.JPG" class="stepimgbranch" id="mainimgbranch">
+                    <img src="billeder/create-new.JPG" class="stepimgbranch" id="smalliimgbranch">
+                    
+                    <h4>Tillykke du har lavet en branch</h4>
+                    <p>Nu burde du se din nye branch, hvor du kan uploade nye filer uden de har indflydelse på dit hoved forløb.</p>
+                    <img src="billeder/ny-branch.JPG" class="stepimgbranch">
+                    <p>For at indlægge nye filer eller ny versioner af en fil med nye ændringer, skal du lave en commit, som vi vil kigge på nedenfor.</p>
+                    
+                    <h3>Commits</h3>
+                    <p>Commits er ligsom at gemme ændringer i en fil i word. Forskellen er så at man har mulighed for at finde tilbage efterfølgende. Så det er ligsom en slagsmilepæl.</p>
+                    
+                    <h4>Hvordan man laver en commit</h4>
+                    <h4>Step 1</h4>
+                    <p>Inde i din branch vil du oppe til højre se tre knapper, en af dem siger "add file". Den trykker du på og trykker "upload file", hvor du derefter vil blive ført til siden vist på billedet nedenfor.</p>
+                    <img src="billeder/commit.JPG" class="stepimgcommit">
+                    <p>Her kan du så trække dine filer eller mapper ind i boksen hvor man nedenfor boksen vil se sine filer blive uploadet.</p>
+                    <p>Før du så trykker "commit changes" nede i bunden, skal du skrive en tittel til commiten samt en beskrivelse så det er nemt og overskueligt at finde rundt i dine forskellige commits du vil lave.</p>
+                
+                    <p>Når commiten er lavet, så har du lavet en branch med en version af din website, som du har mulighed for at merge med dit hovedforløb så ændringer kan ses på dit website. Det gøres ved brug af det man kalder pull request og merge.</p>
+                
+                    <h3>Pull requests og merge</h3>
+                    <p>Pull requests er til når man vil merge en branch med sit hovedforløb. Man laver et forslag til en ny udgave til en anden branch, og så skal man acceptere de ændringer for at ændringerne fra en branch merges med en anden branch.</p>
+                    <p>Det bruges typisk til at lave ændringer i sit hovedforløb/master branch, gennem sine andre branches med andre versioner af samme fil.</p>
+                
+                    <h4>Hvordan man laver pull request og merge</h4>
+                    <h4>Step 1</h4>
+                    <p>Når du går ind i en af dine branches, som ikke er dit hovedforløb, så vil du se en gul boks med en grøn knap, som siger "compare og pull request". Den trykker du på.</p>
+                    <img src="billeder/create-pull-request.JPG" class="stepimgpull">
+                    
+                    <h4>Step 2</h4>
+                    <p>Nu burde du være på siden nedenfor med overskriften "Open pull request".</p>
+                    <p>Her vil der automatisk være givet den samme titel og beskrivelse, som du gav din commit, men det kan ændres på hvis man har lyst. Man trykker så på knappen nede til højre der siger "Create pull request".</p>
+                    <img src="billeder/pull-request-done.JPG" class="stepimgpull">
+                
+                    <h4>Step 3</h4>
+                    <p>Efter du har lavet den pull request og merge, så kan man på Github desktop se de forskellige Diff'er der er lavede på dit hovedforløb. Diff er forskelle mellem commits.</p>
+                    <p>De grønne områder med et plus er det nye der er added.</p>
+                    <p>De røde områder er tekst/kode der er blevet slettet.</p>
+                    <p>Resten som ses som neutralt er det som er uændret mellem commits.</p>
+                    <img src="billeder/changes.JPG" class="stepimgpull">
+                
+                    <p>Nu kan du bruge Github, som et godt værktøj til at versionstyrer dine projekter.</p>
             </section>
-            
             
             
             <footer>
